@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+<style>
+body {
+    background-image: url("back.png");
+    background-repeat:no-repeat;
+    height:371px;
+    margin:0px;
+    }
+    
+   /*top part*/ 
+    
+    .top{
+      text-align: center;  
+    }
+    
+    .budget_title{
+        font-size: 150%;
+    }
+    
+    #result{
+        font-size: 150%;
+    }
+     .budget_income,.budget_expenses{
+         margin:auto;
+         width:270px;
+         padding:15px;
+         text-align: left;
+    }
+    
+    .right{
+        float:right;
+    }
+    
+    .budget_income{
+        background-color: #28B9B5;
+    }
+    
+    .budget_expenses{
+        background-color: #FF5049;
+    }
+    
+    /*bottom part*/
+    
+    .bottom{
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    
+    .operator_sign{
+        padding:5px;
+    }
+    
+    #selector_operator{
+        padding:10px;
+        height:44px;
+        width:55px;
+        border-radius: 5px;
+        width:55px;
+        font-size:18px;
+    }
+    
+    #budget_des{
+         padding:10px;
+        width:350px;
+        border-radius: 5px;
+    }
+    
+    #budgetDesValue{
+         padding:10px;
+        width:80px;
+        border-radius: 5px;
+    }
+    .add_btn{
+        padding:10px;
+        border-radius: 5px;
+    }
+    .enter_income{
+      margin:60px;
+        float:left;
+        margin-left: 170px;
+        color: #28B9B5;
+    }
+    .enter_expenses{
+     margin:80px; 
+        color: #FF5049;
+    }
+</style>
+    
+</head>
+<body>
+
+    <!--TOP PART-->
+<div class="top">
+    <div class="budget">
+    <div class="budget_title">
+        <p>Available budget in <span>%Month%</span></p>
+        </div>
+        <div id="result">-0.00</div><br/>
+        <div class="budget_income">INCOME
+            <div class="right">
+        <div class="budget_income_value"></div>
+            </div>
+            </div>
+            </div><br/>
+        <div class="budget_expenses">EXPENSES
+            <div class="right">
+        <div class="budget_expenses_value">-100.00</div>
+            </div>
+            </div>
+            </div>
+    
+    <!--BOTTOM PART-->
+    
+    <div class="bottom">
+        <div class="bottom1">
+    <div class="operator_sign">
+        <select id="select_operator">
+        <option value="plus">+</option>
+            <option value="minus">-</option>
+        </select>
+        <input type="text" id="budget_des" placeholder="Add Description">
+        <input type="value" id="budgetDesValue" placeholder="Value">
+        <button class="add_btn" id="btn"><i class="ion-ios-checkmark-outline"></i></button>
+    </div>
+        </div>
+        
+        <div class="enter_income">
+        <h2 class="income_content" id="incomeContent">INCOME</h2>
+            <input type="text" id="resulttext">
+        </div>
+        
+        <div class="enter_expenses">
+        <h2 class="expenses_content">EXPENSES</h2>
+        </div>
+        
+        </div>
+    
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    <script>
+    $(document).ready(function(){
+      $('ui').on('click','li',function(){
+          $(this).fadeout(500);
+      }); $('#buttonc').on('click',function(){
+           var newlistitem='<li>New list item</li>';
+           $('ui').append(newlistitem);
+       });
+    });
+    </script>
+        </head>
+    <body>
+    <input type="button" value="Add List Item" id="buttonc">
+        <ul>
+        <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+    </body>
+</html>

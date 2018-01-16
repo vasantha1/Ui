@@ -1,0 +1,29 @@
+<!--<input type="button" value="Click Me" id="btn">
+
+    <script type="text/javascript">
+        document.getElementById("btn").onclick=clickhandler1;
+        document.getElementById("btn").onclick=clickhandler2;
+        
+    function clickhandler1(){
+        alert("handler1 is clicked");
+        
+    }
+        function clickhandler2(){
+            alert("handler2 is clicked");
+        }
+    </script>-->
+
+<input type="button" value="Click Me" id="btn">
+
+  <script type="text/javascript">
+        
+      document.getElementById("btn").addEventListener("click",clickhandler1);
+       document.getElementById("btn").addEventListener("click",clickhandler2);
+    function clickhandler1(){
+        alert("handler1 is clicked");
+        
+    }
+        function clickhandler2(){
+            alert("handler2 is clicked");
+        }
+    </script> 

@@ -1,0 +1,101 @@
+<Doctype html>
+<head>
+<title>
+flex 
+</title>
+<style>
+
+<!--@media screen and (min-width: 580px) {
+}-->
+
+.flex-container{
+background-color:lightgrey;
+display:flex;
+height:100%;
+width:75%;
+border:4px solid black;
+flex-direction:column;
+}
+
+.header{
+background-color:powderblue;
+border:2px solid black;
+margin:2px;
+}
+
+
+.footer{
+background-color:blue;
+border:2px solid skyblue;
+margin:2px;
+}
+
+.flex-container1{
+display:flex;
+border:2px solid black;
+align-items:stretch;
+height:85%;
+margin:10px;
+flex-wrap:wrap;
+
+}
+
+.navbar{
+border:1px solid black;
+width:30%;
+margin:2px;
+flex-grow:1;
+}
+
+.maincontent{
+border:1px solid black;
+width:68%;
+margin:2px;
+}
+
+.fheader{
+display:flex;
+flex-direction:row;
+padding-left:30px;
+padding-right:30px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="flex-container">
+
+<header class="header">
+<div class="fheader">
+<p>logo</p>
+<p>Header</p>
+<p>logout</p>
+</div>
+</header>
+
+
+<div class="flex-container1">
+<nav class="navbar">
+<p>Side Nav</p>
+</nav>
+
+<article class="maincontent">
+<p>Main Content(sections)</p>
+</article>
+</div>
+
+
+
+<footer class="footer">
+<div class="fheader">
+<p>Copy right</p>
+<p>Footer</p>
+<p>Contact info</p>
+</div>
+</footer>
+
+
+</div>
+</body>
+<html>

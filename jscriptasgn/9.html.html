@@ -1,0 +1,25 @@
+<!Doctype html>
+<head>
+<title>
+Reverse
+</title>
+</head>
+<body>
+<script>
+var a=34221;
+function myfun(a){
+var r=0;
+var n=a;
+var rev=0;
+while(n>0)
+{
+r=n%10;
+rev=rev*10+r;
+n=Math.floor(n/10);
+}
+document.write("Given number is" +" "+ a + "the reverse is"+" "+rev);
+}
+myfun(a);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+     <script type="text/jscript">   
+    /*$(document).ready(function(){
+        $('li').each(function(){
+        $('#divresult').css('color','red');
+        })
+        });*/
+        /*$(document).ready(function(){
+        $('li').each(function(){
+        $('#divresult').html($('#divresult').html()+'<br/>'+$(this).text());
+        })
+        });*/
+        
+        $(document).ready(function(){
+        var result='';
+        $('li').each(function(){
+        result+='<br/>'+$(this).text();
+        });
+        $('#divresult').html(result);
+        
+        });
+        </script>
+        <ul>
+        <li>US</li>
+            <li>UK</li>
+            <li>India</li>
+            <li>Australia</li>
+            <li>Africa</li>
+        </ul>
+        <div id="divresult"></div>
+    </body>
+</html>

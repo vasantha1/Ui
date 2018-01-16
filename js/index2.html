@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script type="text/javascript">
+    
+        function Clickme(){
+          
+            var Url=document.getElementById("url").value;
+            var Domain=Url.substring(Url.lastIndexOf("."));
+            document.getElementById("domainpart").value=Domain;
+        }
+    </script>
+    </head>
+    <style>
+        table{
+            border:1px solid black;
+        }
+    </style>
+    <body>
+    <table>
+        <tr>
+        <td>
+            URL
+            </td>
+            <td>
+            <input type="text" id="url">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            Top Level Domain
+            </td>
+            <td>
+            <input type="text" id="domainpart">
+            </td>
+        </tr>
+        
+        <tr>
+        <td>
+            
+            </td>
+            <td>
+            <button onclick="Clickme()">Get Top Level Domain</button>
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>

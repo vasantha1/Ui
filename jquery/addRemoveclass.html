@@ -1,0 +1,59 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+    <style>
+        .boldClass{
+            font-weight: bold;
+        }
+        .italicClass{
+            font-style: italic;
+        }
+        .colorClass{
+            color:red;
+        }
+    </style>
+    
+    <body>
+        <p>Programming Techniques</p>
+        
+        <table>
+        <tr>
+            <td><input type="button" id="btn1" value="Add Color Class" style="width:250px"></td>
+            <td><input type="button" id="btn2" value="Remove Color Class" style="width:250px"></td>
+            </tr>
+            <tr>
+            <td><input type="button" id="btn3" value="Add Color And Italic Classes" style="width:250px"></td>
+                <td><input type="button" id="btn4" value="Remove Color And Italic Classes" style="width:250px"></td>
+            </tr>
+            <tr>
+            <td><input type="button" id="btn5" value="Add Color,Bold classes" style="width:250px"></td>
+                <td><input type="button" id="btn6" value="Remove All Classes" style="width:250px"></td>
+            </tr>
+        </table>
+
+ <script type="text/javascript">
+  $(document).ready(function(){
+    $('#btn1').click(function(){
+       $('p').addClass('colorClass');
+    });
+      $('#btn3').click(function(){
+          $('p').addClass('colorClass italicClass');
+      });
+      $('#btn5').click(function(){
+          $('p').addClass('colorClass boldClass');
+      });
+      $('#btn2').click(function(){
+          $('p').removeClass('colorClass');
+      });
+      $('#btn4').click(function(){
+          $('p').removeClass('boldClass');
+      });
+      $('#btn6').click(function(){
+          $('p').removeClass('italicClass boldClass colorClass');
+      });
+    });
+</script>
+        
+    </body>
+</html>

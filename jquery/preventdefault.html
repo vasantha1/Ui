@@ -1,0 +1,27 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    <script>
+    $(document).ready(function(){
+        
+      /*$(this).on('contextmenu',function(e){
+         e.preventDefault();
+          $('#divresult').append('Right click disabled<br/>');
+      });*/
+        
+        $('#myhyperlink').on('click',function(e){
+         e.preventDefault();
+          $('#divresult').append('Hyper link was disabled<br/>');
+      });
+    
+    });
+    </script>
+        </head>
+    <body>
+   <!--<h3>Right click is disabled.Try to right click and lets see what happens</h3>
+        <div id="divresult"></div>-->
+        <a href="http://pragimtech.com" id="myhyperlink">Click event will not take you to that particular page</a>
+        <div id="divresult"></div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<html ng-app="myapp">
+<head>
+    <script src="angular.min.js"></script>
+    <script src="anchorscroll.js"></script>
+    <script src="angular-route.min.js"></script>
+    <style>
+        .container{
+            width:75%;
+            border:1px solid gray;
+        }
+        header,footer{
+            background-color:#b3b3b3;
+            color:blueviolet;
+            padding:1em;
+            text-align:center;
+            clear:left;
+        }
+        nav{
+            padding:1em;
+            margin:0;
+            max-width:160px;
+            float:left;
+        }
+        nav ul{
+            list-style-type:none;
+            padding:0;
+        }
+        nav ul a{
+            text-decoration: none;
+        }
+        article{
+            padding:1em;
+            overflow:hidden;
+            margin-left:170px;
+            border-left:1px solid gray;
+        }
+    </style>
+    </head>
+    <body ng-controller="myctrl">
+        <div class="container">
+        <header>
+            WebSite Header
+            </header>
+            <nav>
+            <ul>
+                <li><a href="#/Home">Home</a></li>
+                <li><a href="#/Courses">Courses</a></li>
+                <li><a href="#Students">Students</a></li>
+                </ul>
+            </nav>
+            <article>
+            Main content
+            </article>
+            <footer>
+            WebSite Footer
+            </footer>
+        </div>
+    </body>
+</html>

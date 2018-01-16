@@ -1,0 +1,32 @@
+<Doctype html>
+<head>
+<title>
+Sorting
+</title>
+</head>
+<body>
+<script>
+var myarray=[0,-1,4];
+var i;
+var j;
+var t;
+function myfun(){
+for(i=0;i<3;i++)
+{
+for(j=i+1;j<3;j++ )
+{
+if(myarray[i]<myarray[j])
+{
+t=myarray[i];
+myarray[i]=myarray[j];
+myarray[j]=t;
+}
+}
+}
+console.log(myarray);
+}
+myfun();
+
+</script>
+</body>
+</html>

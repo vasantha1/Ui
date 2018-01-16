@@ -1,0 +1,19 @@
+<script type="text/javascript">
+       
+var str2="";
+function palindromestr(str1){
+    for(var i=0;i<=str1.length-1;i++){
+        str2=str1[i]+str2;
+    }
+    if(str2===str1){
+        alert("string is a palindrome");
+    }
+    else{
+        alert("string is not a palindrome");
+    }
+   
+   return str2;
+}
+    var result= palindromestr(prompt("enter string",""));
+   document.write(result);
+</script>

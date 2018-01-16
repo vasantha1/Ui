@@ -1,0 +1,16 @@
+<script type="text/javascript">
+function timeconversion(minutes){
+    var hour;
+    if(minutes<60){
+        document.write('00:'+minutes);
+    }
+    else{
+        var hours=parseInt(minutes/60);
+        var mins=minutes%60;
+        document.write(hours+":"+mins);
+        
+    }
+    
+}
+    var result=timeconversion(prompt("enter minutes",""));
+</script>

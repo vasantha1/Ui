@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script type="text/javascript">
+        
+        var intervalID;
+        function startc(){
+           intervalID=setInterval(getdate,1000);  
+        }
+         
+        function stopc(){
+       clearInterval(intervalID);
+       }
+        
+        function getdate(){
+        document.getElementById("time").innerHTML=new Date();
+        }
+        getdate();
+    </script>
+    </head>
+    <body>
+    <div id="time"></div>
+        <br><br/>
+        <input type="button" value="StartClock" onclick="startc()">
+        <input type="button" value="StopClock" onclick="stopc()">
+    </body>
+</html>

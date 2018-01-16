@@ -1,0 +1,26 @@
+<!Doctype html>
+<head>
+<title>
+Retrieve Elements
+</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var obj={
+FirstName:"Vasantha",
+LastName:"Gundeti",
+FullName:"Vasantha Gundeti"
+};
+var arr=[];
+function myfun(){
+for(var data in obj){
+
+arr.push(obj[data]);
+}
+}
+myfun();
+document.write(arr);
+</script>
+</body>
+</html>

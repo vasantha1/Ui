@@ -1,0 +1,21 @@
+<script type="text/javascript">
+function thirdgreatest(arr){
+    //var arr1=[];
+    var temp=0;
+    for(var i=0;i<arr.length-1;i++)
+    {
+        for(var j=0;j<arr.length-1;j++)
+        {
+            if(arr[i]<arr[j+1])
+            {
+                temp=arr[i];
+                arr[i]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    return arr;
+}
+    var result=thirdgreatest([1,2,8,5]);
+    document.write(result);
+</script>

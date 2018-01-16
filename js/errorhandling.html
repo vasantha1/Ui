@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+function divisionNumber(fn,sn){
+   try{
+    if(sn==0)
+        {
+            throw{
+        error:"please enter valid denominator"
+            }
+        }
+       else{
+      var result=fn/sn;
+      
+    return result;
+       }
+}catch(e){
+    document.write(e.error);
+}
+}
+    
+    
+    fn=Number(prompt("enter first number",""));
+    sn=Number(prompt("enter second number",""));
+    var res=divisionNumber(fn,sn);
+    document.write(res);
+</script>

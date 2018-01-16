@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script type="text/javascript">
+    
+        function changeimage(){
+            var changeimage=document.getElementById("image").getAttribute("src");
+            var imagenumber=changeimage.substring(changeimage.lastIndexOf("/")+1,changeimage.lastIndexOf("/")+2);
+            document.write(imagenumber);
+        }
+        changeimage();
+    </script>
+    </head>
+    <body>
+    <img src="./images/1.jpg" id="image" style="height:150px;width:250px">
+        <br> <br/>
+        <input type="button" id="startimage" value="Start Image SlideShow" onclick="startimage()">
+        <input type="button" id="stopimage" value="Stop Image SlideShow" onclick="stopimage()">
+    </body>
+</html>

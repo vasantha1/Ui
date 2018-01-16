@@ -1,0 +1,26 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+   
+    <body>
+       
+<input type="button"  id="btn">ClickMe
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $('#btn').click(function(event){
+       getEventDetails(event);
+        }).mouseover(function(event){
+       getEventDetails(event);
+   }).mouseout(function(event){
+       getEventDetails(event);
+   });
+       function getEventDetails(event){
+       document.write("Event details" + "<br/>" + "Event=" + event.type + "<br/>" + "X=" + event.pageX + "<br/>" + "Y=" + event.pageY + "<br/>" + "Event type=" + event.target.type + "<br/>" + "Event type Tag name=" + event.target.tagName);
+       }
+  
+    });
+</script>
+        
+    </body>
+</html>

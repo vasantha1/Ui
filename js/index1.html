@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script type="text/javascript">
+    
+        function Clickme(){
+          
+            var email=document.getElementById("Email").value;
+            var emailpart=email.substring(0,email.indexOf("@"));
+            var domainpart=email.substr(email.indexOf("@")+1);
+            document.getElementById("EmailPart").value=emailpart;
+            document.getElementById("DomainPart").value=domainpart;
+        }
+    </script>
+    </head>
+    <style>
+        table{
+            border:1px solid black;
+        }
+    </style>
+    <body>
+    <table>
+        <tr>
+        <td>
+            EmailId
+            </td>
+            <td>
+            <input type="text" id="Email">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            EmailPart
+            </td>
+            <td>
+            <input type="text" id="EmailPart">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            DomainPart
+            </td>
+            <td>
+            <input type="text" id="DomainPart">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            
+            </td>
+            <td>
+            <button onclick="Clickme()">ClickMe</button>
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>

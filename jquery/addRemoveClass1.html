@@ -1,0 +1,49 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+    <style>
+        .textBox{
+            background-color: green;
+            color:black;
+        }
+    </style>
+    
+    <body>
+        <p>Programming Techniques</p>
+        
+        <table>
+        <tr>
+            <td>FirstName:<input type="text" id="text1"></td>
+            </tr>
+            <tr>
+            <td>LastName:<input type="text" id="text2"></td>
+            </tr>
+            <tr>
+            <td>Gender:
+                <select>
+  <option value="female">Female</option>
+  <option value="male">Male</option>
+</select>
+                </td>
+            </tr>
+            <tr>
+            <td>Email:<input type="text" id="text3"></td>
+            </tr>
+        </table>
+
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $('input[type="text"]').each(function(){
+       $(this).focus(function(){
+           $(this).addClass('textBox');
+       });
+       $(this).blur(function(){
+           $(this).removeClass('textBox');
+       })
+   })
+    });
+</script>
+        
+    </body>
+</html>

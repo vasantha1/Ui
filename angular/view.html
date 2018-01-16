@@ -1,0 +1,37 @@
+<html ng-app="myapp">
+<head>
+<title>
+Login page
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+</head>
+<body>
+
+<h2>hello</h2>
+<a href="#/login">Login</a>  <a href="#/signup">SignUp</a>
+
+<div ng-view></div>
+
+<script>
+var app=angular.module("myapp",["ngroute"]);
+app.config(function($routeProvider){
+$routeProvider
+.when("/",{
+templateUrl:"view.html
+})
+.when("/login",{
+templateUrl:"login.html"
+
+})
+.when("/signup",{
+templateUrl:"signup.html"
+
+})
+.otherwise({redirectTo:'/'});
+});
+</script>
+
+</body>
+</html>

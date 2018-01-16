@@ -1,0 +1,13 @@
+<input type="button" id="btn" value="Click Me" onclick="eventobject(event)">
+<div id="details"></div>
+<script type="text/javascript">
+    
+    function eventobject(event)
+    {
+        var eventdetails="Event name:"+event.type+"<br/>X:"+event.clientX
+        +"<br/>Y:"+event.clientY+"<br/>Target type:"+event.target.type+"<br/>Target tag Name"+event.target.tagName;
+        document.getElementById("details").innerHTML=eventdetails;
+    }
+    
+    
+</script>

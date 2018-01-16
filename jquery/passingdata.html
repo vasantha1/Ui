@@ -1,0 +1,31 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+    <script>
+    $(document).ready(function(){
+        $('#buttonc').on('click',{
+           firstname:'vasantha',
+            lastname:'gundeti'
+        },sayhello);
+        
+        $('#buttonc').on('click',{
+            firstname:'marry'
+        },sayhello);
+        
+        $('#buttonc').on('click',sayhello);
+        
+        function sayhello(event){
+            if(event.data==null){
+                alert('no name specified');
+            }
+            else{
+            alert("hello"+' '+event.data.firstname+(event.data.lastname!=null?' '+event.data.lastname:' '));
+            }
+        }
+    });
+    </script>
+    <body>
+    <input type="button" value="Click Me" id="buttonc">
+    </body>
+</html>

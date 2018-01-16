@@ -1,0 +1,146 @@
+<!Doctype html>
+<head>
+<title>
+Flex Box
+</title>
+<style>
+
+.flex-container{
+display:flex;
+height:570px;
+width:75%;
+background-color:#ffffff;
+border:3px solid black;
+}
+
+.header{
+<!--background-color:powderblue;-->
+height:50px;
+width:98%;
+display:flex;
+border:3px solid black;
+margin:1%;
+text-align:center;
+}
+
+#logo{
+display:table;
+border:1px solid black;
+margin-left:10px;
+padding-left:30px;
+padding-right:30px;
+}
+
+#hcontent{
+text-align:center;
+margin-left:350px;
+}
+
+#logout{
+margin-left:350px;
+display:table;
+border:1px solid black;
+padding-left:10px;
+padding-right:10px;
+}
+
+.navbox{
+border:3px solid black;
+margin-top:1%;
+margin-bottom:1%;
+margin:1%;
+}
+
+.navbar{
+display:table;
+width:20%;
+display:flex;
+border:1px solid black;
+height:350px;
+text-align:center;
+margin-top:1%;
+margin-left:1%;
+margin-bottom:1%;
+margin-right:1%;
+float:left;
+}
+
+.maincontent{
+display:table;
+display:flex;
+border:1px solid black;
+height:350px;
+text-align:center;
+margin-top:1%;
+margin-left:1%;
+margin-bottom:1%;
+margin-right:1%;
+overflow:hidden;
+}
+
+.footer{
+<!--background-color:powderblue;-->
+height:50px;
+width:98%;
+display:flex;
+border:3px solid black;
+margin:1%;
+}
+
+#box1{
+display:table;
+border:1px solid black;
+margin-left:10px;
+padding-left:30px;
+padding-right:30px;
+}
+
+#box2{
+display:table;
+border:1px solid black;
+margin-left:300px;
+padding-left:30px;
+padding-right:30px;
+}
+
+#fcontent{
+text-align:center;
+margin-left:300px;
+}
+
+</style>
+</head>
+<body class="flex-container">
+<div>
+
+<div>
+<header class="header">
+<p id="logo">logo</p>
+<p id="hcontent">Header</p>
+<p id="logout">logout</p>
+</header>
+</div>
+
+<div class="navbox">
+
+<nav class="navbar">
+<p>Side Nav</p>
+</nav>
+
+<article class="maincontent">
+<p>Main Content(sections)</p>
+</article>
+
+</div>
+
+<div >
+<footer class="footer">
+<p id="box1">Copy right</p>
+<p id="fcontent">Footer</p>
+<p id="box2" style="text-align:right;">Contact info</p>
+</footer>
+</div>
+
+</div>
+</body>
+<html>

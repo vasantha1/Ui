@@ -1,0 +1,7 @@
+.logoredirecting{
+padding:30 80px 80px 100px;
+text-align:left;
+vertical-align:middle
+display:inline-block;
+<!--width:70%;-->
+margin:50px 100px 300px 50px;

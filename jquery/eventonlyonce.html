@@ -1,0 +1,19 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    <script>
+    $(document).ready(function(){
+      
+        $('#buttonc').on('click',function(){
+            alert("button was clicked");
+            $(this).off('click');
+        });
+    });
+    </script>
+        </head>
+    <body>
+    <input type="button" value="ClickMe" id="buttonc">
+        
+    </body>
+</html>

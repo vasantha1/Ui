@@ -1,0 +1,30 @@
+<script type="text/javascript">
+function nearby_az(str){
+  var chr;
+  for(var i=0;i<str.length;i++){
+      if(str[i]=='a'){
+         chr=i; 
+          
+          if(str[chr+1]=='z'||str[chr+2]=='z'||str[chr+3]=='z'){
+             return true;
+              break;
+}
+    else{
+        continue;
+    }
+      }
+      
+      else {
+          
+          return false;
+      }
+  }
+   console.log( "i am out of loop");
+  
+  }
+  
+
+
+    var result=nearby_az("abzca");
+    document.write(result);
+</script>

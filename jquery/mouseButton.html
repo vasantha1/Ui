@@ -1,0 +1,29 @@
+<html>
+   
+   <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+   
+    <body>
+       
+<input type="button"  value="ClickMe" id="btn">
+        <div id="divresult"></div>
+        
+ <script type="text/javascript">
+  $(document).ready(function(){
+      $('#btn').click(function(event){
+      var whichbutton;
+          switch(event.which){
+              case 1:whichbutton="left button clicked";break;
+              case 2:whichbutton="middle button clicked";break;
+              case 3:whichbutton="right button clicked";break;
+              default:whichbutton="invalid button clicked";break;
+                            }
+      
+      $('#divresult').html(whichbutton);
+          });
+  });
+</script>
+        
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<script type="text/javascript">
+function longestword(str){
+    var str1=[];
+    var str2=[];
+      for(var i=0;i<str.length;i++){
+          if(str[i]==" "){
+              str1.push(i);
+          }
+      }
+   
+    var longest=str.slice(0,str1[0]);
+    var smallest=str.slice(str1[0]+1,str.length);
+    if(longest.length>smallest.length){
+        document.write(longest);
+    }
+    else{
+        document.write(smallest);
+    }
+     }
+    var result=longestword("vas reddy gundeti");
+    
+</script>

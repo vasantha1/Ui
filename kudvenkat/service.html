@@ -1,0 +1,32 @@
+<html ng-app="myapp">
+<head>
+<script src="angular.min.js"></script>
+    <script src="servicescript.js"></script>
+    <script src="stringservice.js"></script>
+    <style>
+        table{
+            border-collapse:collapse
+        }
+        tr,td{
+            border:1px solid gray;
+        }
+    </style>
+    </head>
+    <body ng-controller="myctrl">
+        <table>
+        <tr>
+            <td>Your String</td>
+            <td><input type="text" ng-model="input"></td>
+            </tr>
+            <tr>
+            <td>Result</td>
+            <td><input type="text" ng-model="output"></td>
+            </tr>
+            <tr>
+            <td></td>
+                <td><input type="button" ng-click="transformstring(input)" value="process string"></td>
+            </tr>
+        </table>
+    
+    </body>
+</html>

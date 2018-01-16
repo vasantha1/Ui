@@ -1,0 +1,52 @@
+<html>
+    <head>
+<style>
+    #divcontent1{
+        display:table-cell;
+        border:1px solid black;
+        padding:20px;
+        text-align:center;
+        
+    }
+    #divcontent2{
+        display:table-cell;
+        border:1px solid black;
+        padding:20px;
+        text-align:center;
+        
+    }
+    #divcontent3{
+        display:table-cell;
+        border:1px solid black;
+        padding:20px;
+        text-align:center;
+        
+    }
+   
+   
+</style>
+        </head>
+<body>
+<!--<div id="divcontent" onclick="alert('div clicked')">Div Element
+<span id="divcontent" onclick="alert('Span clicked')">Span Element
+<input type="button" onclick="alert('Button clicked')" value="ClickMe">
+    </span>
+    </div>
+  </body>-->
+    <div id="divcontent1" >Div 1
+    <div id="divcontent2" >Div 2
+        <div id="divcontent3" >Div 3
+        </div>
+        </div>
+    </div>
+    </body>
+  <script> 
+      var details=document.getElementsByTagName('div');
+      for(var i=0;i<details.length;i++){
+          details[i].onclick=function(){
+              this.style.borderColor="red";
+              alert(this.getAttribute("id")+"border color changed");
+          };
+      }
+</script>
+</html>

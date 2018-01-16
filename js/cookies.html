@@ -1,0 +1,25 @@
+<select id="ddltheme">
+<option value="Select Color">Select Color</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+</select>
+
+<script type="text/javascript">
+    
+    window.onload=function(){
+        if(document.cookie.length!=0){
+            var namevaluearray=document.cookie.split("=");
+            document.bgcolor=namevaluearray[1];
+            document.getElementById("ddltheme").value=namevaluearray[1];
+        }
+    }
+    
+    function setcolor(){
+        var selectedcolor=document.getElementById("ddltheme").value;
+        if(selectedcolor!="Select Color"){
+            "use strict";
+            document.bgColor=selectedcolor;
+        }
+    }
+</script>

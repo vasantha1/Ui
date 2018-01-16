@@ -1,0 +1,65 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+    
+    <body>
+       
+        <table>
+        <tr>
+            <td>FirstName:</td>
+            <td><input type="text" id="text1" class="inputRequired"></td>
+            </tr>
+            <tr>
+            <td>LastName:</td>
+            s<td><input type="text" id="text2" class="inputRequired"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><select class="inputRequired">
+                    <option value="ny">NewYork</option>
+                    <option value="nj">NewJersy</option>
+                    <option value="nv">Nevada</option>
+                    <option value="tx">Texas</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+            <td>Favourite Color:</td>
+            <td><input type="radio" class="inputRequired">Red</td>
+            <td><input type="radio" class="inputRequired">Green</td>
+            <td><input type="radio" class="inputRequired">Blue</td>
+            </tr>
+            <tr>
+            <td>Contact Method:</td>
+            <td><input type="checkbox" class="inputRequired">Email</td>
+            <td><input type="checkbox" class="inputRequired">Phone</td>
+            <td><input type="checkbox" class="inputRequired">Social Media</td>
+            </tr>
+            <tr>
+            <td>Comments:</td>
+            <td><input type="textarea" class="inputRequired"></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="submit"></td>
+                </tr>
+        </table>
+        <div id="divresult"></div>
+
+ <script type="text/javascript">
+  $(document).ready(function(){
+   var result="";
+      $('.inputRequired').change(function(){
+          if(result==""){
+              result=$(this).val();
+          }
+          else{
+              result+=','+$(this).val();
+          }
+          $("#divresult").html(result);
+      });
+    });
+</script>
+        
+    </body>
+</html>

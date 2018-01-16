@@ -1,0 +1,29 @@
+<script type="text/javascript">
+
+    //printing the arguments and count
+    /*function printarguments(){
+        document.write("count is:"+arguments.length+"<br/>");
+        for(var i=0;i<arguments.length;i++){
+            
+            document.write("Argument"+i+"is"+arguments[i]+"<br/>");
+        }
+    }
+    printarguments();
+    printarguments(10,20);
+    printarguments(10,20,30);*/
+    
+    //adding the arguments
+    function addNumbers(){
+      document.write("count is:"+arguments.length+"<br/>");
+        var sum=0;
+       for(var i=0;i<arguments.length;i++){
+           
+           sum=sum+arguments[i];
+           
+       } 
+        document.write("Arguments sum is:"+sum+"<br/>");
+    }
+    addNumbers(10,20);
+    addNumbers(1,20,3);
+    addNumbers("A","B");
+</script>

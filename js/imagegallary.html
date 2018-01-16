@@ -1,0 +1,29 @@
+<html>
+<head>
+    
+    </head>
+    <body>
+        <img src="./images/1.jpg" alt="first image" style="height:450px;width:600px" id="one">
+        
+        <div id="mainimage" onclick="changeimage(event)">
+            <img src="./images/2.jpg" alt="second image" style="height:150px;width:150px" id="two" >
+            <img src="./images/3.jpg" alt="third image" style="height:150px;width:150px" id="three" >
+            <img src="./images/4.jpg" alt="fourth image" style="height:150px;width:150px" id="four">
+            <img src="./images/5.jpg" alt="fifthimage" style="height:150px;width:150px" id="five">
+        </div>
+        
+    </body>
+    <script>
+    function changeimage(event){
+        
+        event=event||window.event;
+        
+        
+        var targetelement=event.target||event.srcElement;
+        if(targetelement.tagName=="img"){
+        document.getElementById("mainimage").src=targetelement.getAttribute("src");
+        }
+    }
+      
+    </script>
+</html>

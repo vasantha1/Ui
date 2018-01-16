@@ -1,0 +1,340 @@
+<!Doctype html>
+<head>
+<title>
+Bootstrap examples
+</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="jumbotron">
+<h1>Bootstrap<small>Secondary text</small></h1>
+<p>hi this is vasantha learning <mark>bootstrap</mark></p>
+<p>The <abbr title="World Health Organization>WHO</abbr>is most developed organization</p>
+
+<div class="row">
+<div class="col-sm-3" style="background-color:red;">hello1</div>
+<div class="col-sm-3" style="background-color:yellow;">hello2</div>
+<div class="col-sm-3" style="background-color:pink;">hello3</div>
+<div class="col-sm-3" style="background-color:blue;">hello4</div>
+</div>
+
+<blockquote>
+<h2>Blockquote Text</h2>
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+<footer>From WWF's website</footer>
+</blockquote>
+
+<dl>
+<dt>Coffee</dt>
+<dd>-Coffee is a black hot drink</dd>
+<dt>Milk</dt>
+<dd>-Milk is a white cold drink</dd>
+</dl>
+
+<p>Code lelments</p>
+<p>The html code elements are <code>span</code>,<code>div</code>,<code>section</code>
+</p>
+
+<p>To indicate input has to be entered through the keyboard</p>
+<p>enter <kbd>ctrl + p</kbd></p>
+
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<td>firstName</td>
+<td>LastName</td>
+<td>Email</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+</tr>
+<tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+</tbody>
+</table>
+</div>
+
+<!--<img src="flo.jpg" class="img-rounded" class="img-responsive" width="200" height="200">
+<img src="flo.jpg" class="img-circle" width="200" height="200">
+<img src="flo.jpg" class="img-thumbnail" width="200" height="200">
+</div>-->
+<div class="row">
+<div class="col-sm-4">
+<div class="thumbnail">
+<a href="flo.jpg" target="_blank">
+<img src="flo.jpg" width="200" height="200">
+<div class="caption">
+<p>This is a flower</p>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="thumbnail">
+<a href="flo1.jpg" target="_blank">
+<img src="flo1.jpg" width="200" height="200">
+<div class="caption">
+<p>This is a flower1</p>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="thumbnail">
+<a href="flo2.jpg" target="_blank">
+<img src="flo2.jpg" width="200" height="200">
+<div class="caption">
+<p>This is a flower2</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+
+<div class="btn-group">
+<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Sony <span class="caret"></span></button>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#">Tabs</a></li>
+<li><a href="#">Phones</a></li>
+<li>laptops</li>
+</ul>
+</div>
+
+<div class="page-header">
+<h1>Header text</h1>
+</div>
+<h2>This an Example text</h2>
+
+<div class="well">
+<h3>wells content which adds border around the content</h3>
+</div>
+
+<div class="alert alert-success alert-dismissable">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">*</a>
+<p>This alert box could indicate a successful or positive action.</p>
+</div>
+<div class="alert alert-info">
+<p>This alert box could indicate a info action.</p>
+</div>
+<div class="alert alert-warning">
+<p>This alert box could indicate a warning action.</p>
+</div>
+<div class="alert alert-danger">
+<p>This alert box could indicate a danger action.</p>
+</div>
+
+<!-----buttons------------------------------------------------->
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">primary</button>
+<button type="button" class="btn btn-info">info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-info btn-lg btn-block">Danger</button>
+
+<button type="button" class="btn btn-info active">info</button>
+<button type="button" class="btn btn-info disabled">info</button>
+
+<p>buttons group</p>
+<div class="btn-group">
+<button type="button" class="btn btn-info">Apple</button>
+<button type="button" class="btn btn-info">Samsung</button>
+<button type="button" class="btn btn-info">Sony</button>
+</div>
+
+
+<div class="btn-group">
+<button type="button" class="btn btn-info">Apple</button>
+<button type="button" class="btn btn-info">Samsung</button>
+<div class="btn-group">
+<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Sony <span class="caret"></span></button>
+<ul class="dropdown-menu" role="menu">
+<li>Tabs</li>
+<li>Phones</li>
+<li>laptops</li>
+</ul>
+</div>
+</div>
+
+<h1>Glyphicons</h1>
+<p>Search icon:<span class="glyphicon glyphicon-search"></span></p>
+<p>Envelope icon:<span class="glyphicon glyphicon-envelope"></span></p>
+
+<h1>badges</h1>
+<p>Dashboard<span class="badge">include</p>
+
+
+<h1>labels</h1>
+<p>Example1<span class="label label-default">1</span></p>
+
+<h1>pagination</h1>
+<ul class="pagination">
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+</ul>
+
+<h1>Breadcrumb</h1>
+<ul class="breadcrumb">
+<li><a href"#">Home</a></li>
+<li><a href"#">About</a></li>
+<li><a href"#">Info</a></li>
+<li><a href"#">Contact</a></li>
+</ul>
+
+<h1>Pager</h1>
+<ul class="pager">
+<li><a href="#">Previous</a></li>
+<li><a href="#">Next</a></li>
+
+<h1>List Group</h1>
+<ul class="list-group">
+<li class="list-group-item">First Item</li>
+<li class="list-group-item">Second Item</li>
+<li class="list-group-item">Third Item</li>
+</ul>
+
+<h1>Dropdown</h1>
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" id="menu1" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+	<li><a href="#">HTML</a></li>
+  </div>
+<br>
+<br>
+<h1>Panel</h1>
+<div class="panel panel-default">
+<div class="panel-body">Panel content</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">Panel heading</div>
+<div class="panel-body">Panel content</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">Panel heading</div>
+<div class="panel-body">Panel content</div>
+<div class="panel-footer">Panel footer</div>
+</div>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">HiddenButton</button>
+<div id="demo" class="collpase">
+<p>
+</p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+
+<div>
+<h3>Tabs</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  <br>
+<p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs and Pills Tutorial to find out how this can be done.</p>
+</div>
+
+<div>
+<ul class="nav nav-pills">
+<li><a href="#">Home</a></li>
+<li><a href="#">Menu1</a></li>
+<li><a href="#">Menu2</a></li>
+<li><a href="#">Menu3</a></li>
+</ul>
+</div>
+
+<h1>Dynamic Tabs</h1>
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+<li><a data-toggle="tab" href="#menu1">Menu1</a></li>
+<li><a data-toggle="tab" href="#menu2">Menu2</a></li>
+<li><a data-toggle="tab" href="#menu3">Menu3</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="home" class="tab-pane fade in active">
+<h1>Home</h1>
+</div>
+
+<div id="menu1" class="tab-pane fade">
+<h1>menu1</h1>
+</div>
+
+<div id="menu2" class="tab-pane fade">
+<h1>menu2</h1>
+</div>
+
+<div id="menu3" class="tab-pane fade">
+<h1>menu3</h1>
+</div>
+</div>
+
+<h1>Nav Bars</h1>
+<nav class="navbar navbar-default">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">Websitename</a>
+</div>
+
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">page2</a></li>
+<li><a href="#">page3</a></li>
+<li><a href="#">page4</a></li>
+
+<h1>NavBar Search Options</h1>
+<nav class="navbar navbar-inverse">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">WebsiteName</a>
+</div>
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">page1</a></li>
+<li><a href="#">page2</a></li>
+</ul>
+<form class="navbar-form navbar-left">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="search">
+</div>
+<button type="submit" class="btn btn-info">Submit</button>
+</form>
+</div>
+</nav>
+
+
+</div>
+</body>
+</html>

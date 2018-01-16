@@ -1,0 +1,89 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+    <style>
+        img{
+            width:22px;
+            height:22px;
+        }
+    </style>
+    <body>
+       
+        <table>
+        <tr>
+            <td>FirstName:</td>
+            <td><input type="text" id="text1" class="inputRequired"></td>
+            <td><img src="help.png" id="img1"></td>
+            <td><div id="firstelemnt" style="display:none">Enter the input feild</div></td>
+            </tr>
+            <tr>
+            <td>LastName:</td>
+            <td><input type="text" id="text2" class="inputRequired"></td>
+            <td><img src="help.png"></td>
+                <td><div id="secondelement" style="display:none">Enter the input feild</div></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><select class="inputRequired">
+                    <option value="ny">NewYork</option>
+                    <option value="nj">NewJersy</option>
+                    <option value="nv">Nevada</option>
+                    <option value="tx">Texas</option>
+                </select>
+                </td>
+                <td><img src="help.png"></td>
+                <td><div id="thirdelement" style="display:none">Enter the input feild</div></td>
+            </tr>
+            <tr>
+            <td>Favourite Color:</td>
+                <td>
+            <input type="radio" class="inputRequired">Red
+            <input type="radio" class="inputRequired">Green
+            <input type="radio" class="inputRequired">Blue
+                    </td>
+                <td><img src="help.png"></td>
+                <td><div id="fourthelement" style="display:none">Enter the input feild</div></td>
+            </tr>
+            <tr>
+            <td>Contact Method:</td>
+            <td>
+                <input type="checkbox" class="inputRequired">Email
+            <input type="checkbox" class="inputRequired">Phone
+            <input type="checkbox" class="inputRequired">Social Media
+                    </td>
+                
+                <td><img src="help.png"></td>
+                <td><div id="fifthelement" style="display:none">Enter the input feild</div></td>
+            </tr>
+            <tr>
+            <td>Comments:</td>
+            <td><input type="textarea" class="inputRequired"></td>
+                <td><img src="help.png"></td>
+                <td><div id="sixthelement" style="display:none">Enter the input feild</div></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="submit"></td>
+                </tr>
+        </table>
+        <div id="divresult"></div>
+
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $('img[src="help.png"]').mouseover(function(){
+       var helpIconId=$(this).attr('id');
+       var divId=helpIconId.replace('img','div');
+       console.log(divId);
+       //$('#'+divId).fadeIn(500);
+   }).mouseout(function(){
+       var helpIconId=$(this).attr('id');
+       var divId=helpIconId.replace('img','div');
+       //$('#'+divid).fadeOut(500);
+       console.log(divId);
+   });
+          
+    });
+</script>
+        
+    </body>
+</html>

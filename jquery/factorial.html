@@ -1,0 +1,18 @@
+<script type="text/javascript">
+function factorial1(num){
+    var n=num;
+  if(num==0||num==1){
+      return num;
+  }  
+   else{
+       while(num>1){
+           n=n*(num-1);
+           num--;
+       }
+   }
+    return n;
+    }
+
+    var result=factorial1(3);
+    console.log(result);
+</script>

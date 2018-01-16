@@ -1,0 +1,81 @@
+<html>
+<head>
+    <script type="text/javascript">
+    function addNum(){
+        var firstnumber=document.getElementById("firstnum").value;
+        
+        if(firstnumber==""){
+            alert("please enter valid first number");
+            return;
+        }
+        
+         firstnumber=parseFloat(firstnumber); 
+        
+        if(isNaN(firstnumber)){
+            alert("enter first number");
+            return;
+        }
+       
+        
+        var secondnumber=document.getElementById("secondnum").value;
+        
+        if(secondnumber==""){
+            alert("please enter valid second number");
+            return;
+        }
+        
+        secondnumber=parseFloat(secondnumber); 
+        
+        if(isNaN(secondnumber)){
+            alert("enter second number");
+            return;
+        }
+        
+    
+        var resultnum=firstnumber+secondnumber;
+        document.getElementById("result").value=resultnum;
+    }
+    </script>
+    </head>
+    <style>
+        table{
+            border:1px solid black;
+        }
+    </style>
+    <body>
+    <table>
+        <tr>
+        <td>
+            Firstnumber
+            </td>
+            <td>
+            <input type="text" id="firstnum">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            Secondnumber
+            </td>
+            <td>
+            <input type="text" id="secondnum">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            Result
+            </td>
+            <td>
+            <input type="text" id="result">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            
+            </td>
+            <td>
+            <button onclick="addNum()">Add</button>
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>

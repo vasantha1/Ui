@@ -1,0 +1,25 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+    <style>
+        .containerDiv{
+            background-color: red;
+        }
+    </style>
+    <body>
+        
+<div id="div1" title="my div1">Div1</div>
+<br/><br/>
+<div id="div2" title="my div2">Div2</div>
+        <br/><br/>
+<div id="div3" title="my div3">Div2</div>
+        
+        <script type="text/javascript">
+       $(document).ready(function(){
+          // $('div').wrap('<div class="containerDiv"></div>');
+           $('div').wrapAll('<div class="containerDiv"></div>');
+    });
+</script>
+        </body>
+</html>

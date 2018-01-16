@@ -1,0 +1,169 @@
+<!Doctype html>
+<head>
+<title>
+Flex Box
+</title>
+<style>
+
+.flex-container{
+<!--display:flex;-->
+height:570px;
+width:75%;
+background-color:#ffffff;
+border:3px solid black;
+}
+
+.header{
+<!--background-color:powderblue;-->
+height:50px;
+width:98%;
+display:flex;
+border:3px solid black;
+margin:1%;
+text-align:center;
+}
+
+#logout{
+margin-left:750px;
+display:table;
+border:1px solid black;
+padding-left:10px;
+padding-right:10px;
+}
+
+a{
+text-decoration:none;
+}
+
+.navbox{
+border:3px solid black;
+margin-top:1%;
+margin-bottom:1%;
+margin:1%;
+}
+
+nav{
+display:table;
+width:20%;
+display:flex;
+border:1px solid black;
+height:350px;
+margin-top:1%;
+margin-left:1%;
+margin-bottom:1%;
+margin-right:1%;
+float:left;
+}
+
+.maincontent{
+display:table;
+display:flex;
+border:1px solid black;
+height:350px;
+margin-top:1%;
+margin-left:1%;
+margin-bottom:1%;
+margin-right:1%;
+}
+
+.footer{
+<!--background-color:powderblue;-->
+height:50px;
+width:98%;
+display:flex;
+border:3px solid black;
+margin:1%;
+}
+
+#box1{
+display:table;
+border:1px solid black;
+margin-left:10px;
+padding-left:30px;
+padding-right:30px;
+}
+
+#box2{
+display:table;
+border:1px solid black;
+margin-left:300px;
+padding-left:30px;
+padding-right:30px;
+}
+
+#fcontent{
+text-align:center;
+margin-left:300px;
+}
+
+ul{
+text-align:right;
+}
+
+li{
+display:block;
+list-type:none;
+text-align:right;
+margin-left:500px;
+}
+
+p{
+text-align:justify;
+margin-right:1%;
+}
+
+h2{
+text-align:center;
+margin-left:1%;
+float:bottom;
+}
+</style>
+</head>
+
+<body class="flex-container">
+<header class="header">
+<img src="icon.png" width="54" height="54">
+<p id="logout">logout</p>
+</header>
+
+<div class="navbox">
+<nav>
+<ul>
+<p><a href="#">Main Page</a></p>
+<p><a href="#">Content</a></p>
+<p><a href="#">About</a></p>
+<p><a href="#">Random Article</a></p>
+<p><a href="#">Page Information</a></p>
+</ul>
+</nav>
+
+<article class="maincontent">
+<h2>Gallery</h2>
+<ul>
+<p>Google Photos gives users free, unlimited storage for photos up to 16 megapixels and videos up to 1080p resolution. 
+The service automatically analyzes photos, identifying various visual features and subjects. Users can search for anything in photos,
+ with the service returning results from three major categories: People, Places, and Things. Google Photos recognizes faces, 
+grouping similar ones together; 
+geographic landmarks (such as the Eiffel Tower); and subject matter, including birthdays, buildings, animals, food, and more.
+</p>
+<p>Google implements different forms of machine learning into the Photos service, particularly its recognition of photo contents,
+ as well as enabling features including automatically generated albums consisting of the best photos taken during an event or trip;
+ automatic animations in which similar photos are combined into a quick video; and surfacing past memories at significant times.
+</p>
+</ul>
+</article>
+</div>
+
+<footer class="footer">
+<!--<p id="box1">Copy right</p>
+<p id="fcontent">Footer</p>
+<p id="box2" style="text-align:right;">Contact info</p>-->
+copyright &copy;Wikipedia.org
+<ul>
+<li><strong>Email:</strong>info@hello-media.com</li>
+<li><strong>Phone:</strong>9176867201</li>
+</ul>
+</footer>
+
+</body>
+</html>

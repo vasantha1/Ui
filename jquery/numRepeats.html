@@ -1,0 +1,22 @@
+<script type="text/javascript">
+function numRepeats(str){
+    var arr=[];
+    var count=0;
+    var c=0;
+    for(var i=0;i<str.length;i++){
+        for(var j=0;j<str.length;j++){
+            if(str[i]==str[j+1]){
+                count++;
+            }
+            }
+        if(count>1){
+           return c++;
+        }
+        }
+   
+    }
+   
+
+    var result=numRepeats("abba");
+    document.write(result);
+</script>

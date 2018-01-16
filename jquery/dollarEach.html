@@ -1,0 +1,31 @@
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <div id="divresult"></div> 
+        <ul>
+        <li>Usa</li>
+            <li>Uk</li>
+            <li>India</li>
+            <li>Australia</li>
+        </ul>
+
+ <script type="text/javascript">
+  $(document).ready(function(){
+      /*var result="";
+   $('li').each(function(index,element){
+       result+='index='+index+', value='+$(element).text()+'<br/>';
+   })
+      $('#divresult').html(result);*/
+      var result="";
+      var intArray=[100,200,300,400];
+      $.each(intArray,function(key,element){
+        result+='Key='+key+', value='+element+'<br/>';  
+      })
+      $('#divresult').html(result);
+    });
+</script>
+        
+    </body>
+</html>

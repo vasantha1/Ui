@@ -1,0 +1,214 @@
+<!Doctype html>
+<head>
+<title>
+Table Decoration
+</title>
+<style>
+
+body{
+background-color:aqua;
+}
+@media screen and (min-width: 480px) {
+    
+	body
+	{
+	background: linear-gradient(yellow,green,blue,indigo,violet);
+	}
+
+	<!--.screen{
+	
+	}-->
+.hbar{
+margin:0%;
+}
+
+ul{
+list-style-type:none;
+background-color:#f1f1f1;
+position:fixed;
+height:100%;
+width:25%;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+li a{
+text-decoration:none;
+text-align:center;
+display:block;
+padding:15px;
+}
+
+li a.active{
+background-color:orange;
+color:white;
+}
+ 
+a:visited{
+background-color:#663399;
+color:black;
+}
+
+a:hover{
+background-color:gray;
+color:black;
+}
+
+a:active{
+background-color:green;
+color:black;
+}
+
+#image{
+margin-left:27%;
+width:40%;
+height:35%;
+}
+
+#image:hover{
+opacity:0.5;
+}
+
+.content{
+margin-left:27%;
+}
+
+.table{
+margin-left:27%;
+}
+
+table,tr,th,td{
+border:1px solid black;
+border-collapse:collapse;
+padding:25px;
+margin-top:25px;
+}
+
+th{
+background-color:#7bea7b;
+}
+
+tr:nth-child(odd){
+background-color:#DCDCDC;
+}
+
+.empcontent{
+margin-left:27%;
+}
+
+.emp{
+margin-left:27%;
+}
+
+.empins{
+overflow:hidden;
+margin-left:27%;
+width:200px;
+height:100px;
+background-color: #eee;
+border: 1px solid black;
+overflow:scroll;
+}
+</style>
+</head>
+<body>
+
+<div class="hbar">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+<div class="screen">
+<img id="image" src="employee.jpg" alt="employee">
+<div class="content">
+<h2>EMPLOYEE DETAILS</h2>
+<p>This screen allows you to view individual employee records in detail. 
+You may use the navigation buttons at the left side of the screen to page through records, 
+or you may use the sort or find functions on any field. You may also search for an employee name.
+</p>
+<p>The Employee Detail screen contains:
+</p>
+
+<li>FirstName</li>
+<li>LastName</li>
+<li>Age</li>
+<li>Contact</li>
+</div>
+
+<div class="table">
+<table>
+<tr>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Age</th>
+<th>Contact</th>
+</tr>
+<tr>
+<td>Terry</td>
+<td>Griffin</td>
+<td>40</td>
+<td>9402222222</td>
+</tr>
+<tr>
+<td>Catherine</td>
+<td>Stringfellow</td>
+<td>39</td>
+<td>9403456789</td>
+</tr>
+<tr>
+<td>Richard</td>
+<td>Simpson</td>
+<td>45</td>
+<td>9412346780</td>
+</tr>
+<tr>
+<td>Teena</td>
+<td>Johnson</td>
+<td>50</td>
+<td>9403372372</td>
+</tr>
+<tr>
+<td>Steven</td>
+<td>Johnson</td>
+<td>55</td>
+<td>9461234567</td>
+</tr>
+</table>
+</div>
+
+<div class="empcontent">
+<h2>BREAKING DOWN 'Employer's Liability Insurance'</h2>
+<p>Most employees are covered by workers compensation laws that are established at the state level (one exception is federal employees). States require most employers to carry workers compensation insurance, 
+ which provides some level of medical expenses and lost wages to employees or their beneficiaries when an employee is injured, sickened or killed by job-related causes.
+ There is no need for the employee to sue the employer to establish fault in order to qualify for workers compensation. 
+ If an employee doesn’t feel that workers compensation adequately covers their loss — perhaps because they feel their employer’s negligence caused their injury — they may decide to sue their employer, 
+ making punitive claims for pain and suffering.
+ Employer’s liability coverage is designed to cover these types of expenses, which aren’t covered by workers compensation or by a general liability insurance policy. 
+ It can also help limit an employer’s losses in that as a condition of receiving a payout under the policy, the affected employee will be required to release the employer and the insurance company from further liability.
+</p>
+</div>
+
+<div class="emp">
+<p>If an employer intentionally aggravates an employee’s work-related injury or illness, 
+employer’s liability insurance will not cover the employer’s financial obligations to the employee, 
+and the employer will have to pay the employee out of its own pocket if the employee wins in court. 
+Employer's liability insurance policies also place limits on what they will pay out per employee, per injury and per illness. 
+These limits might be as low as $100,000 per employee, $100,000 per incident and $500,000 per policy. In addition, this insurance does not cover independent contractors.
+</p>
+</div>
+
+<div class="empins">
+<p>Workers’ compensation insurance was designed as and remains the employee’s sole remedy to recover medical costs and lost wages resulting from bodily injury suffered in the “course of employment”.
+ There are, however, bodily and financial injuries that: 1) fall outside workers’ compensation protection, and 2) are excluded by the general liability policy.
+ Employers’ Liability Insurance dovetails between and connects the workers’ compensation policy and the commercial general liability policy; filling gaps created by the narrowness of the workers’ 
+ compensation policy and exclusions in the commercial general liability policy.
+</p>
+</div>
+</div>
+</body>
+</html>
